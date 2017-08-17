@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head th:fragment="head">
+	<!-- title, auther meta tag, enable mobile view -->
+	<title>Wandering Wonderland Unique and Vintage clothing</title>
+	<link rel="icon" type="image" href="images/ww-icon.png"/>
+	<meta name="author" content="Jason Bierbrauer"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content="Wandering Wonderland Vintage re-sale sells unique and 
+    vintage clothing and accessories. Site design by, Jason Bierbrauer"/>
+    <meta name="keywords" content="Wandering Wonderland, Vintage clothing, Vintage resale, re-sale, 
+    unique clothing, vintage accessories, Vintage accessories, Unique accessories, Unique resale, 
+    one-of-a-kind clothing, one-of-a-kind accessories, armani, gucci, purse, shirt, jacket, coat, dress,
+    vintage dress, vintage shirt, silk shirt, vintage jacket, leather jacket, unique coat"/>
+	<!--   -->
+	<meta http-equiv="Content-Type" context="text/html; charset=UTF-8" />	
+	<!-- bootstrapJS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous" />
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script><!-- CSS styling -->
+	<link href="css/style.css" rel="stylesheet"/>
+
+</head>
+    <body>
+       
+			<!--  header -->
+			<header th:fragment="header">
+			
+			</header>
+			
+			<!-- jumbotron -->
+			<div align="center" th:fragment="jumbotron">
+				<div  style="background-color: #290137; border-bottom-right-radius: 8px; border-bottom-left-radius: 8px;">
+					<h2 style=" border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; background-color: #000000; color: #ffffff;">Wandering Wonderland unique and vintage re-sale</h2>
+					<img class="img-fluid" src="images/banner04.jpg" alt="Wandering Wonderland" title="Wandering Wonderland"
+						style="border-radius: 15px;" />
+					
+					<br/><br/>
+				</div>
+			</div>
+			
+			<!-- navbar -->
+				<nav  th:fragment="nav" class="navbar navbar-toggleable-md navbar-inverse" style="background-color:  #290137;">
+				  <button class="navbar-toggler navbar-toggler-center" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarNavDropdown" style="background-color:  #290137;">
+				    <ul class="navbar-nav">
+		          <li class="nav-item active">
+		            <a class="nav-link" href="#/">Home</a>
+		          </li>
+		          
+		          <li class="nav-item active">
+		            <a class="nav-link" href="http://www.ebay.com/usr/raindanceresale">Shop</a>
+		          </li>
+		          
+		          <li class="nav-item active">
+		            <a class="nav-link" href="#/about">About</a>
+		          </li>
+		          
+		          <li class="nav-item active">
+		            <a class="nav-link" href="#/contact">Contact</a>
+		          </li>
+		          		          
+		        </ul>
+		        
+		      </div>
+		    </nav>
+		    
+     
+		
+		     <!-- start of footer -->
+			 <footer th:fragment="footer">
+			     
+			</footer>
+    </body>
+</html>
