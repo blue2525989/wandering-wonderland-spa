@@ -20,7 +20,7 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 
-version = '1.1'
+version = '1.8'
 sourceCompatibility = 1.8
 
 repositories {
@@ -28,16 +28,19 @@ repositories {
 }
 
 dependencies {
-	compile('org.springframework.boot:spring-boot-starter-security')
+	//compile('org.springframework.boot:spring-boot-starter-security')
 	compile('org.springframework.boot:spring-boot-starter-thymeleaf')
 	compile('org.springframework.boot:spring-boot-starter-web')
-	runtime('org.springframework.boot:spring-boot-devtools')
-	runtime('mysql:mysql-connector-java')
-    compile 'com.amazonaws:aws-java-sdk-s3'
+	//runtime('org.springframework.boot:spring-boot-devtools')
+	//runtime('mysql:mysql-connector-java')
+    //compile 'com.amazonaws:aws-java-sdk-s3'
 	compile 'com.amazonaws:aws-java-sdk-core'
 	compile group: 'com.amazonaws', name: 'aws-java-sdk-ses'	
-	compile("org.springframework:spring-jdbc")
+	//compile("org.springframework:spring-jdbc")
 	testCompile('org.springframework.boot:spring-boot-starter-test')
-	testCompile('org.springframework.security:spring-security-test')
+	//testCompile('org.springframework.security:spring-security-test')
+	// https://mvnrepository.com/artifact/com.github.rjdavis3/ebay-sdk
+compile group: 'com.github.rjdavis3', name: 'ebay-sdk', version: '1.0.0'
+	
 }
 

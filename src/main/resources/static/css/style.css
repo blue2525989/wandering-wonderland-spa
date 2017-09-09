@@ -1,7 +1,8 @@
 body {
-	background-color: #87ffef;
+	background-color: #729fcf;
 }
 div.blue-nav {
+	align: center;
 	padding: 5px;
 	border-radius : 20px;
 	background-color: #290137!important;
@@ -15,4 +16,8 @@ div.blue-jumbo {
 
 img.blue-img {
 	border-radius: 15px;
+}
+blue-main-content {
+	background-color: #098765;
+	color: #000000;
 }

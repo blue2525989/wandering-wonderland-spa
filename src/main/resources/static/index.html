@@ -6,17 +6,19 @@
 	<div th:replace="fragments::nav">
 	</div>			
 	
-	<div class="container">
+	<div>
 		<div th:replace="fragments::jumbotron"></div>
 	</div>
 	
-	<br/><br/>
+	<div
+		style="background-color: #290137; color: #ffffff;  border-bottom-right-radius: 8px; border-bottom-left-radius: 8px;">
+		<br/>
+		<div class="container" ng-view=""></div>
+		<br/>
+	</div>
 	
-	<div class="container">
-		<div ng-view=""></div>
-	</div>	
-	
-	
+	<br/>	
+		
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.min.js" integrity="sha256-RPPsQcSPq5bHR3vDUWpr9XR/NHMe9QAJ8Uwffw3LBDM=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-cookies.min.js" integrity="sha256-WskGqEfzq9bZpLRsXqk1Osv15hg7C/294NtNAkkzJ34=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-route.min.js" integrity="sha256-CuNgGJu9k5UcVy1zTsgEKgcEjkHJ3mVHdU2BzulOQXM=" crossorigin="anonymous"></script>

@@ -1,8 +1,6 @@
 
 package com.wanderingwonderland.controller;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -19,8 +17,7 @@ public class HomeController {
 	
 	@RequestMapping(value="/home", method=RequestMethod.GET)
 	public String home(Model model) {
-		List<String> content = homePageService.homeContent();
-		model.addAttribute("content", content.iterator().next());
+		model.addAttribute("content", homePageService.homeContent().subList(0, 1).get(0));
 		return "pages/home";
 	}
 }

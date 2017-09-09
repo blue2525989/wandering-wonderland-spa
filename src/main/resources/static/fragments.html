@@ -7,7 +7,7 @@
 	<meta name="author" content="Jason Bierbrauer"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <meta name="description" content="Wandering Wonderland Vintage re-sale sells unique and 
-    vintage clothing and accessories. Site design by, Jason Bierbrauer"/>
+    vintage clothing and accessories listed on eBay. Site design by, Jason Bierbrauer"/>
     <meta name="keywords" content="Wandering Wonderland, Vintage clothing, Vintage resale, re-sale, 
     unique clothing, vintage accessories, Vintage accessories, Unique accessories, Unique resale, 
     one-of-a-kind clothing, one-of-a-kind accessories, armani, gucci, purse, shirt, jacket, coat, dress,
@@ -19,8 +19,38 @@
 	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script><!-- CSS styling -->
-	<link href="css/style.css" rel="stylesheet"/>
-
+	
+	<style>
+	body {
+	background-color: #729fcf;
+	}
+	div.blue-nav {
+		align: center;
+		padding: 5px;
+		border-radius : 20px;
+		background-color: #290137!important;
+		color: #ffffff !important;
+	}
+	
+	div.blue-jumbo {
+		background-color: #290137!important;
+		border-radius: 15px;
+	}
+	
+	img.blue-img {
+		border-radius: 15px;
+	}
+	blue-main-content {
+		background-color: #290137;
+		color: #fffff;
+	}
+	a{
+		color: #babdb6;
+	}
+	a:hover{
+		color: #babdb6;
+	}
+	</style>
 </head>
     <body>
        
@@ -30,9 +60,9 @@
 			</header>
 			
 			<!-- jumbotron -->
-			<div align="center" th:fragment="jumbotron">
-				<div  style="background-color: #290137; border-bottom-right-radius: 8px; border-bottom-left-radius: 8px;">
-					<h2 style=" border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; background-color: #000000; color: #ffffff;">Wandering Wonderland unique and vintage re-sale</h2>
+			<div align="center" th:fragment="jumbotron"
+				style="width: auto;">
+				<div  style="background-color: #000000;">
 					<img class="img-fluid" src="images/banner04.jpg" alt="Wandering Wonderland" title="Wandering Wonderland"
 						style="border-radius: 15px;" />
 					
@@ -41,9 +71,9 @@
 			</div>
 			
 			<!-- navbar -->
-				<nav  th:fragment="nav" class="navbar navbar-toggleable-md navbar-inverse" style="background-color:  #290137;">
+				<div th:fragment="nav" class="navbar navbar-toggleable-md navbar-inverse" style="background-color:  #290137;">
 				  <button class="navbar-toggler navbar-toggler-center" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-				    <span class="navbar-toggler-icon"></span>
+				    <span class="navbar-toggler-icon"></span><!-- change data-toggle to dropdown for better mobile action -->
 				  </button>
 				  <div class="collapse navbar-collapse" id="navbarNavDropdown" style="background-color:  #290137;">
 				    <ul class="navbar-nav">
@@ -52,7 +82,7 @@
 		          </li>
 		          
 		          <li class="nav-item active">
-		            <a class="nav-link" href="http://www.ebay.com/usr/raindanceresale">Shop</a>
+		            <a class="nav-link" target="_blank" href="http://www.ebay.com/usr/raindanceresale">Shop</a>
 		          </li>
 		          
 		          <li class="nav-item active">
@@ -62,13 +92,14 @@
 		          <li class="nav-item active">
 		            <a class="nav-link" href="#/contact">Contact</a>
 		          </li>
+
 		          		          
 		        </ul>
 		        
 		      </div>
-		    </nav>
+		    </div>
 		    
-     
+     <!-- <a class="nav-link" href="http://www.ebay.com/usr/raindanceresale">Shop</a> -->
 		
 		     <!-- start of footer -->
 			 <footer th:fragment="footer">

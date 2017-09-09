@@ -20,7 +20,7 @@ import com.amazonaws.services.simpleemail.model.SendEmailRequest;
 @Service
 @Qualifier("emailService")
 public class EmailService {
-    static final String TO = "";
+    static final String TO = "mywanderingwonderland@gmail.com";
     
     @Autowired
     BasicAWSCredentials creds;

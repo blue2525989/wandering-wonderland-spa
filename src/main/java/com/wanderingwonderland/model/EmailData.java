@@ -1,5 +1,6 @@
 package com.wanderingwonderland.model;
 
+
 public class EmailData {
 
 	private String name;

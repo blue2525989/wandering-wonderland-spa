@@ -1,7 +1,5 @@
 package com.wanderingwonderland.controller;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -18,8 +16,7 @@ public class ContactController {
 	
 	@RequestMapping(value="/contact", method=RequestMethod.GET)
 	public String home(Model model) {
-		List<String> content = emailService.emailPageContent();
-		model.addAttribute("content", content.iterator().next());
+		model.addAttribute("content", emailService.emailPageContent().subList(0, 1).get(0));
 		return "pages/contact";
 	}
 

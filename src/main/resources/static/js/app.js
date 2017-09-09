@@ -18,6 +18,9 @@ app.config(function($routeProvider, $httpProvider, $sceProvider) {
 	}).when('/about', {
 		templateUrl : '/about',
 		requireLogin : false
+	}).when('/shop', {
+		templateUrl : '/shop',
+		requireLogin: false
 	}).otherwise('/');
 	
 	$httpProvider.defaults.headers.common["X-Requested-With"] = 'XMLHttpRequest';

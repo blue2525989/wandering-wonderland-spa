@@ -1,11 +1,10 @@
-<div th:if="${content}" align="center">
+<div ng-if="response == null" th:if="${content}">
 	<h1>Get in touch with me...</h1>
 	<p th:utext="${content}"></p>
+	<br/><br/>
 </div>
 
-<br/><br/>
-
-<div>
+<div ng-if="response == null">
 			
 		<form ng-submit="controller.sendEmail()" role="form">
 
@@ -68,4 +67,8 @@
 	</form>
 </div>
 
-<br/><br/>
+<!-- show this after sending the email -->
+<div ng-if="response">
+	<br/><br/>
+	<h1 ng-bind="response"></h1>
+</div>

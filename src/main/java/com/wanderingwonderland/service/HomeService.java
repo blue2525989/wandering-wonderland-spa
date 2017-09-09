@@ -12,10 +12,12 @@ public class HomeService {
 
 	public List<String> homeContent() {
 		List<String> model = new ArrayList<String>();
-		String content = "We sell fine made vintage clothing and accessories. "
-				+ "	All of our items are authentic and some still even have price "
-				+ "tags! We source our items from the best. Be sure to stop by the eBay"
-				+ " shop to see what's for sale. Move fast because once it's gone, it's gone!";
+		String content = "We sell designer vintage to modern clothing and accessories. "
+				+ "Be sure to check our ebay store often as we're always finding new "
+				+ "treasures to share! Thanks for stopping by."
+				+ "<br/><br/>"
+				+ "<div align='center'><a target='_blank' href='http://www.ebay.com/usr/raindanceresale'>"
+				+ "<img class='img-fluid' src='images/ebay-button.gif'/></a></div>";
 		model.add(content);
 		return model;
 	}

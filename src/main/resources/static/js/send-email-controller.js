@@ -16,10 +16,9 @@ app.controller('contact', function ($scope, $http, $cookies, $location) {
 		
 		$http.post(url, emailData).then(function (response) {
 			// grab saved parameter
-			window.alert(response.data.saved);
-			$location.path("/");
+			$scope.response = response.data.saved;
 		}, function (response) {
-			$location.path("/contact");
+			$scope.response = response.data.saved;
 		});
 	}
 });

@@ -19,7 +19,6 @@ public class SendMailController {
 	@Autowired
 	private EmailService emailService;
 	
-	// stub for sending email form
 	@RequestMapping(value="/sendEmail", method=RequestMethod.POST, 
 			consumes = MimeTypeUtils.APPLICATION_JSON_VALUE)
 	public Map<String, Object> sendEmail(@RequestBody EmailData emailData) {
@@ -28,14 +27,13 @@ public class SendMailController {
 		try {
 			emailService.sendMail(emailData.getName(), emailData.getSurname(), 
 					emailData.getEmail(), emailData.getPhone(), emailData.getMessage());
+			saved = "Thank you, " + emailData.getName() + " " + emailData.getSurname() 
+			+ ", your message is on the way and will be responded to shortly!";
 		} catch (Exception e) {
 			saved = e.getMessage();
 		} finally {
-			saved = "Thank you, " + emailData.getName() + " " + emailData.getSurname() 
-				+ ", your message is on the way and will be responded to shortly!";
-		}	
-		
-		model.put("saved", saved);
+			model.put("saved", saved);
+		}		
 		return model;
 	}
 	
